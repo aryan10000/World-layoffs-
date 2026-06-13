@@ -1,24 +1,38 @@
-# World Layoffs Data Cleaning, Analysis & Tableau Dashboard
+# Global Layoffs Analytics
 
-## Project Overview
+End-to-end workforce analytics project leveraging MySQL and Tableau to uncover global layoff trends across companies, industries, countries, and time periods.
 
-This end-to-end data analytics project explores global layoff trends using SQL and Tableau. The project begins with data cleaning and transformation in MySQL, followed by exploratory data analysis (EDA) to uncover insights about layoffs across companies, industries, countries, and time periods. The cleaned dataset is then visualized through an interactive Tableau dashboard.
+## Dashboard Preview
+
+<img width="1280" height="832" alt="dashboard-1" src="https://github.com/user-attachments/assets/132ff126-4c5c-41f5-8399-48ce62609c25" />
+
+
+
+## Key Insights
+
+- Technology companies accounted for the largest share of global layoffs.
+- The United States experienced the highest number of workforce reductions among all countries.
+- Several startups reported 100% workforce reductions during economic downturns.
+- Layoffs peaked during 2022–2023, reflecting broader macroeconomic uncertainty.
+- Consumer, retail, and technology sectors were among the most heavily impacted industries.
+- A small number of large organizations contributed disproportionately to total layoffs worldwide.
 
 ---
 
-## Problem Statement
+## Business Problem
 
-Mass layoffs have affected thousands of companies worldwide over the last few years. This project aims to analyze global layoff data to identify patterns, trends, and key insights regarding workforce reductions across industries and countries.
+Global workforce reductions have impacted thousands of organizations across industries. This project analyzes layoff patterns to identify which companies, industries, and countries were most affected and how workforce reductions evolved over time.
 
+### Interactive Dashboard 
+**View Dashboard Here:** [View Interactive Tableau Dashboard](https://public.tableau.com/views/World_Layoffs_tableau_dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 ---
 
 ## Dataset
 
-The dataset contains information about layoffs from companies around the world, including:
+The dataset contains global layoff records, including:
 
 - Company
 - Industry
-- Location
 - Country
 - Date
 - Total Employees Laid Off
@@ -30,130 +44,78 @@ The dataset contains information about layoffs from companies around the world, 
 
 ---
 
-## Project Workflow
+## Analytics Workflow
 
+### Data Cleaning (MySQL)
 
-### 1. Data Cleaning (MySQL)
+Performed:
 
-The raw dataset contained duplicates, inconsistent formatting, blank values, and incorrect data types.
+- Duplicate removal using ROW_NUMBER()
+- Data standardization
+- Missing value treatment
+- Date conversion
+- Data validation
+- Dataset preparation for analysis
 
-Cleaning steps performed:
+### Exploratory Data Analysis
 
-- Removed duplicate records using `ROW_NUMBER()`
-- Standardized company names and country values
-- Converted dates into proper SQL date format
-- Handled blank and NULL values
-- Populated missing industry values where possible
-- Removed unnecessary records
-- Created a clean analysis-ready dataset
-
----
-
-### 2. Exploratory Data Analysis (EDA)
-
-Business questions explored:
+Key questions answered:
 
 - Which companies laid off the most employees?
 - Which industries were most affected?
 - Which countries experienced the highest layoffs?
-- How did layoffs change over time?
-- Which companies had the highest layoffs each year?
-- What are the cumulative layoff trends over time?
+- How did layoffs evolve over time?
+- Which companies experienced the highest layoffs each year?
+- What were the cumulative layoff trends?
 
----
+### Dashboard Development (Tableau)
 
-### 3. Data Visualization (Tableau)
+Created an interactive dashboard featuring:
 
-The cleaned dataset was visualized using Tableau to create an interactive dashboard that enables users to:
-
-- Analyze layoffs by company
-- Compare layoffs across industries
-- Explore country-wise layoff trends
-- Track layoffs over time
-- Identify top companies affected each year
-- Monitor cumulative layoff trends
+- Layoffs by Company
+- Layoffs by Industry
+- Country-wise Layoff Analysis
+- Layoff Trends Over Time
+- Top Companies by Layoffs
+- Cumulative Layoff Analysis
 
 ---
 
 ## SQL Concepts Used
 
-- Common Table Expressions (CTEs)
+- CTEs
 - Window Functions
-- `ROW_NUMBER()`
-- `DENSE_RANK()`
+- ROW_NUMBER()
+- DENSE_RANK()
 - Aggregate Functions
 - Date Functions
 - Data Cleaning Techniques
 - Data Transformation
-- `GROUP BY`
-- `ORDER BY`
-- Joins
 
 ---
 
-## Tableau Dashboard
+## Tools & Technologies
 
-### Dashboard Preview
-
-<img width="1280" height="832" alt="dashboard-1" src="https://github.com/user-attachments/assets/132ff126-4c5c-41f5-8399-48ce62609c25" />
-
-
-### Interactive Dashboard
-
-**View Dashboard Here:**
-
-[View Interactive Tableau Dashboard](https://public.tableau.com/views/World_Layoffs_tableau_dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-
----
-
-## Key Insights
-
-- Technology companies accounted for a significant portion of total layoffs.
-- Several companies reported 100% workforce reductions.
-- Layoffs peaked during specific economic periods.
-- The impact varied considerably across industries and countries.
-- Certain companies consistently appeared among the top layoffs year after year.
+- MySQL
+- SQL
+- Tableau
 
 ---
 
 ## Files Included
 
-- `world_layoffs_analysis.sql` – Data cleaning and exploratory analysis queries
-- `dashboard.png` – Tableau dashboard screenshot
-- `README.md`
-
----
-
-## Tools Used
-
-- MySQL
-- MySQL Workbench
-- Tableau
-- SQL
-
----
-
-## Skills Demonstrated
-
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Data Transformation
-- Data Visualization
-- Business Intelligence
-- Dashboard Development
-- SQL Query Optimization
-- Analytical Thinking
+- world_layoffs_analysis.sql
+- dashboard.png
+- README.md
 
 ---
 
 ## Project Outcome
 
-This project transformed raw layoff data into actionable business insights through a complete analytics workflow involving data cleaning, SQL analysis, and interactive dashboard creation. The resulting dashboard enables stakeholders to quickly identify trends, compare industries, and understand the global impact of workforce reductions.
+Built an end-to-end analytics solution that transformed raw layoff records into actionable insights, enabling trend analysis across industries, companies, and geographies through SQL-based exploration and executive dashboarding.
 
 ---
 
 ## Author
 
 Aryan Soni
-
-GitHub: https://github.com/aryan10000
