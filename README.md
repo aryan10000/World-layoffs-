@@ -6,7 +6,8 @@ End-to-end workforce analytics project leveraging MySQL and Tableau to analyze g
 
 ## Executive Dashboard
 
-<img width="1280" height="832" alt="dashboard-1" src="https://github.com/user-attachments/assets/132ff126-4c5c-41f5-8399-48ce62609c25" />
+<img width="1280" height="769" alt="Screenshot 2026-06-15 at 12 07 10 AM" src="https://github.com/user-attachments/assets/01608b65-c307-4db5-8056-0e9d9837f186" />
+
 
 ### Interactive Dashboard
 
